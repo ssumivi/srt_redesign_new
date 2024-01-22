@@ -49,7 +49,7 @@ header {
   padding: 20px 100px;
   border-bottom: 1px solid #f2f2f2;
   box-shadow: 0px 0.5px 0px 0px rgba(0, 0, 0, 0.25);
-  min-width: 1360px;
+  /* min-width: 1360px; */
 }
 .topmenu {
   position: relative;
@@ -135,15 +135,13 @@ header {
   text-align: left;
 }
 /* main menu */
-#top_menu {
-  padding: 0 100px;
-  min-width: 1360px;
-}
 
 .menu {
   display: flex;
+  width: 85vw;
+  margin: 0 auto;
   justify-content: space-between;
-  gap: 90px;
+  gap: 70px;
   align-items: center;
   position: relative;
   height: 80px;
@@ -671,7 +669,7 @@ section .section_top,
 /* footer */
 footer {
   margin-top: 45px;
-  min-width: 1360px;
+  /* min-width: 1360px; */
 }
 /* footer top */
 .ft_top {
