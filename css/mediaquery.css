@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media all and (max-width: 1330px) {
+@media all and (max-width: 1540px) {
   html {
     font-size: 14px;
   }
@@ -154,6 +154,7 @@
   }
   /* menu */
   .menu {
+    width: 850px;
   }
   /* main */
 
@@ -218,5 +219,81 @@
   /* footer */
   footer {
     /* min-width: 800px; */
+  }
+}
+@media all and (max-width: 890px) {
+  /* header */
+  .header_inner {
+    /* min-width: 800px; */
+    padding: 20px 0;
+    gap: 10rem;
+  }
+  /* menu */
+  .menu {
+    width: 800px;
+    gap: 6rem;
+  }
+  /* main */
+
+  .main_inner {
+    width: 740px;
+  }
+  .station {
+    width: 340px;
+  }
+  .station_box {
+    width: 340px;
+  }
+  .station_box .list:focus {
+    width: 340px;
+  }
+  .date_time .month {
+    padding: 20px;
+    width: 340px;
+  }
+  .dropbox {
+    width: 340px;
+  }
+  .dropbox .time {
+    width: 340px;
+  }
+  .number-input {
+    width: 680px;
+  }
+  .number-input input {
+    text-align: left;
+  }
+  .load_timeTable {
+    width: 300px;
+  }
+  /* quick menu */
+  .quick_menu {
+    width: 740px;
+  }
+  .quick_menu_list {
+    gap: 60px;
+  }
+  /* notice */
+  section .section_top,
+  .section_bt {
+    width: 740px;
+  }
+  .section_left {
+    width: 58%;
+  }
+  .noti_date {
+    display: none;
+  }
+  /* best travel pkg */
+  .best_travel {
+    width: 740px;
+    gap: 30px;
+  }
+  .best_travel_imgslide .swiper {
+    height: 330px;
+  }
+  /* footer */
+  .ft_bottom {
+    display: none;
   }
 }
