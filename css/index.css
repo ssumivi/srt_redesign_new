@@ -78,71 +78,8 @@ header {
 .fullsc_log a:hover{
   color: #5a2149;
 }
-.icon {
-  display: flex;
-  align-items: center;
-  margin-top: 8px;
-  gap: 70px;
-  font-size: 1.3rem;
+.tablet_log{
   display: none;
-}
-.log_in {
-  position: absolute;
-  top: -10px;
-  left: -20px;
-  width: 56px;
-  height: 22px;
-  text-align: center;
-  line-height: 24px;
-  border-radius: 15px;
-  color: #fff;
-  font-size: 0.8rem;
-  background-color: #5a2149;
-}
-.log_in::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: -0.5px;
-  width: 51px;
-  height: 18px;
-  border-radius: 15px;
-  border: 3px solid #5a2149;
-  /* transition: all 0.3s; */
-  animation: log_in_move 0.7s infinite;
-  transition-timing-function: ease-in-out;
-}
-@keyframes log_in_move {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(2%);
-  }
-  /* 100% {
-    transform: translateY(0);
-  } */
-}
-.fa-globe::after {
-  content: "사이트맵";
-  display: block;
-  position: absolute;
-  top: -10px;
-  left: 60px;
-  width: 70px;
-  height: 22px;
-  text-align: center;
-  line-height: 24px;
-  background-color: #404040;
-  border-radius: 15px;
-  color: #fff;
-  font-size: 0.8rem;
-  opacity: 0;
-  transition: all 0.3s;
-}
-li:hover .fa-globe::after {
-  opacity: 1;
 }
 /* selectbox style */
 .select_lang {
@@ -163,6 +100,7 @@ li:hover .fa-globe::after {
 }
 .fa-chevron-down {
   color: #404040;
+  font-size: 1.2rem;
 }
 .list_box {
   position: absolute;
@@ -210,7 +148,7 @@ li:hover .fa-globe::after {
   position: relative;
   height: 80px;
   margin-top: 40px;
-  padding: 0 50px;
+  padding: 0 80px;
   border-radius: 5px;
   border: 1px solid var(--d-8-d-8-d-8, #d8d8d8);
   word-break: keep-all;
@@ -226,10 +164,10 @@ li:hover .fa-globe::after {
   content: "";
   display: block;
   position: absolute;
-  top: 5.64rem;
+  top: 4.9rem;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 340px;
   background: rgba(95, 96, 98, 0.95);
   z-index: 9;
   opacity: 0;
@@ -240,6 +178,7 @@ li:hover .fa-globe::after {
 .depth_2 {
   position: absolute;
   margin-top: 30px;
+  word-break: keep-all;
   line-height: 3rem;
   height: 22rem;
   z-index: 99;
@@ -438,14 +377,16 @@ li:hover .fa-globe::after {
 }
 .number-input input {
   height: 30px;
-  padding-left: 15px;
   font-size: 0.9rem;
   width: 3em;
+  padding-left: 1.1rem;
+  text-align: left;
 }
 .number-input label {
   padding: 0 30px;
   font-weight: 500;
   font-size: 1.1rem;
+  
 }
 .number-input button {
   background-color: #ededed;
@@ -465,11 +406,6 @@ li:hover .fa-globe::after {
 }
 .number-input button:nth-of-type(even) {
   border-radius: 0 5px 5px 0;
-}
-
-.quantity {
-  width: 3rem;
-  text-align: center;
 }
 form p {
   display: flex;

@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // loop: true,
     // centeredSlides: true,
     spaceBetween: 20,
-    grabCursor: false,
+    grabCursor: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
