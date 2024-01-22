@@ -2,52 +2,41 @@ document.addEventListener("DOMContentLoaded", function () {
   var list = document.getElementById("languageList");
   var listItems = list.getElementsByTagName("li");
   var delay = 200;
-
   function toggleList() {
     list.style.display = list.style.display === "none" ? "block" : "none";
   }
-
   function closeListWithDelay() {
     setTimeout(function () {
       list.style.display = "none";
     }, 3000);
   }
-
   function closeList() {
     list.style.display = "none";
   }
-
   function toggleLanguageList() {
     var languageList = document.getElementById("languageList");
     languageList.classList.toggle("visible");
   }
-
   function changeLanguage(language) {
     var selectedLanguage = document.getElementById("selectedLanguage");
     selectedLanguage.innerText = language;
   }
-
   function toggleUnderline(span) {
     var spans = document.querySelectorAll(".from_to span");
     spans.forEach(function (element) {
       element.classList.remove("active");
     });
-
     span.classList.add("active");
   }
-
   function toggleStationBox(button) {
     var stationBox = button.nextElementSibling;
     var currentOpacity = parseFloat(
       window.getComputedStyle(stationBox).getPropertyValue("opacity")
     );
-
     stationBox.style.opacity = currentOpacity === 0 ? 1 : 0;
   }
-
   function selectStation(station) {
     console.log("Selected station: " + station);
-
     setTimeout(function () {
       var stationBoxes = document.querySelectorAll(".station_box");
       stationBoxes.forEach(function (box) {
@@ -55,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }, delay);
   }
-
   function getCurrentDate() {
     var currentDate = new Date();
     var year = currentDate.getFullYear();
@@ -63,22 +51,18 @@ document.addEventListener("DOMContentLoaded", function () {
     var day = currentDate.getDate().toString().padStart(2, "0");
     return `${year}-${month}-${day}`;
   }
-
   document.addEventListener("DOMContentLoaded", function () {
     var currentDateInput = document.getElementById("currentDate");
     currentDateInput.value = getCurrentDate();
   });
-
   function changeQuantity(number, value) {
     var inputElement = document.getElementById(number);
     var currentValue = parseInt(inputElement.value, 10);
     var newValue = currentValue + value;
-
     if (newValue >= 0 && newValue <= 9) {
       inputElement.value = newValue;
     }
   }
-
   // Swiper
   var swiper = new Swiper(".noti_slide", {
     cssMode: true,
@@ -98,9 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       disableOnInteraction: false,
     },
   });
-
   document.querySelector(".pl").addEventListener("click", toggleList);
-
   for (var i = 0; i < listItems.length; i++) {
     listItems[i].addEventListener("click", closeList);
   }
@@ -110,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // loop: true,
     // centeredSlides: true,
     spaceBetween: 20,
+    grabCursor: false,
     grabCursor: true,
     pagination: {
       el: ".swiper-pagination",

@@ -164,10 +164,10 @@
   }
   .from_to span:first-child {
     top: 0;
-    left: 102px;
+    left: 83px;
   }
   .from_to span:nth-child(2) {
-    right: 107px;
+    right: 87px;
   }
   .station {
     width: 380px;
@@ -237,6 +237,13 @@
 
   .main_inner {
     width: 740px;
+  }
+  .from_to span:first-child {
+    top: 0;
+    left: 74px;
+  }
+  .from_to span:nth-child(2) {
+    right: 77px;
   }
   .station {
     width: 340px;

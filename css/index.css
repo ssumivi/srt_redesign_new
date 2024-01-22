@@ -22,11 +22,7 @@ body {
   color: #404040;
 }
 #wrapper {
-  /* background-color: rgb(230, 243, 253); */
   width: 100%;
-  /* max-width: 1920px;
-  min-width: 1300px; */
-  margin: 15px auto;
 }
 .container {
   max-width: 1440px;
@@ -527,6 +523,10 @@ section .section_top,
   overflow: hidden;
   /* 상대너비 설정 */
   max-width: 250px;
+}
+.section_right ul li a:hover{
+  text-decoration: underline;
+  text-decoration-color: #404040;
 }
 .noti_date{
   font-size: 0.8rem;
