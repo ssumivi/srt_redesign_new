@@ -30,7 +30,7 @@
     margin: 40px auto;
   }
   .depth_1::after {
-    height: 320px;
+    height: 330px;
   }
   /* main */
   .main_inner {
@@ -302,5 +302,121 @@
   /* footer */
   .ft_bottom {
     display: none;
+  }
+}
+@media all and (max-width: 810px) {
+  header {
+    height: inherit;
+  }
+  .header_inner {
+    width: 100%;
+    justify-content: center;
+    gap: 12rem;
+  }
+  .logo {
+    padding-left: 32%;
+  }
+  .topmenu {
+    display: none;
+  }
+  .mobile_menu {
+    display: block;
+    font-size: 1.8rem;
+  }
+  .mobile_menu a:first-child {
+    padding-right: 3.5rem;
+  }
+  #top_menu {
+    display: none;
+  }
+  /* main */
+
+  .main_inner {
+    width: 560px;
+  }
+  .from_to span:first-child {
+    top: 0;
+    left: 24px;
+  }
+  .from_to span:nth-child(2) {
+    right: 27px;
+  }
+  .station {
+    width: 260px;
+    height: 160px;
+  }
+  .station_box {
+    width: 260px;
+  }
+  .station_box .list:focus {
+    width: 260px;
+  }
+  .date_time .month {
+    padding: 20px;
+    width: 260px;
+  }
+  .dropbox {
+    width: 260px;
+  }
+  .dropbox .time {
+    width: 260px;
+  }
+  .number-input {
+    width: 520px;
+  }
+  .number-input label {
+  }
+  .number-input input {
+    text-align: left;
+  }
+  .load_timeTable {
+    width: 300px;
+  }
+  /* quick menu */
+  .quick_menu {
+    width: 560px;
+  }
+  .quick_menu_list {
+    gap: 30px;
+    padding: 20px 0 25px 0;
+  }
+  /* notice */
+  section .section_top,
+  .section_bt {
+    width: 560px;
+  }
+  section .section_top {
+    flex-direction: column;
+    gap: 3rem;
+    border: 0;
+    padding: 0;
+  }
+  .section_left {
+    width: 560px;
+    padding: 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+  }
+  .section_right {
+    width: 560px;
+    padding: 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+  }
+  .section_right::after{
+    top: 50px;
+    left: 1rem;
+    width: 95%;
+  }
+  .noti_date {
+    display: none;
+  }
+  /* best travel pkg */
+  .best_travel {
+    width: 560px;
+    gap: 30px;
+  }
+  .best_travel_imgslide .swiper {
+    height: 330px;
   }
 }

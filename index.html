@@ -39,7 +39,7 @@
 <script src="js/html5shiv.js"></script>
 <script src="js/respond.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="js/script.js"></script>
+
 
   </head> 
   <body>
@@ -50,6 +50,15 @@
           <div class="logo">
             <a href="#">
               <img src="images/logo-e.png" alt="로고" />
+            </a>
+          </div>
+          <!-- mobile -->
+          <div class="mobile_menu">
+            <a href="#">
+              <i class="fa-solid fa-circle-user"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-bars"></i>
             </a>
           </div>
           <div class="topmenu">
@@ -93,29 +102,29 @@
               <li><a href="#">로그인</a></li>
               <li><a href="#">회원가입</a></li>
               <li><a href="#">사이트맵</a></li>
-              <li class="select_lang">
+              <ul class="select_lang">
                 <button class="pl on" onclick="toggleList()">
                   <span id="selectedLanguage">languages</span>
                   <i class="fa-solid fa-chevron-down"></i>
                 </button>
                 <ul class="list_box" id="languageList">
                   <li>
-                    <button class="list" onclick="changeLanguage('english')">
+                    <button class="list">
                       english
                     </button>
                   </li>
                   <li>
-                    <button class="list" onclick="changeLanguage('japanese')">
+                    <button class="list" >
                       japanese
                     </button>
                   </li>
                   <li>
-                    <button class="list" onclick="changeLanguage('chinese')">
+                    <button class="list" >
                       chinese
                     </button>
                   </li>
+              </ul>
             </ul>
-            
           </div>
         </div>
         <nav id="top_menu" class="container">
@@ -166,11 +175,10 @@
             <li class="depth_1">
               <a href="#">여행상품</a>
               <ul class="depth_2">
-                <li><a href="#">SRT BEST 여행상품</a></li>
+                <li><a href="#">BEST 여행상품</a></li>
                 <li><a href="#">지역별 여행상품</a></li>
                 <li><a href="#">당일 여행상품</a></li>
                 <li><a href="#">1박 2일 여행상품</a></li>
-                <li><a href="#">2박 3일 여행상품</a></li>
                 <li><a href="#">계절여행 특별관</a></li>
               </ul>
             </li>
@@ -536,5 +544,6 @@
       </div>
     </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
