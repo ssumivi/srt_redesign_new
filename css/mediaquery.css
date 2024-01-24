@@ -14,10 +14,6 @@
     /* min-width: 1100px; */
     padding: 20px 0;
   }
-  .fullsc_log::after {
-    top: 1.2rem;
-    right: 11.7rem;
-  }
   #top_menu {
     /* min-width: 1100px; */
     padding: 0;
@@ -97,18 +93,30 @@
     padding: 20px 0;
     gap: 26rem;
   }
+  /* full W login */
   .fullsc_log {
     display: none;
   }
-  .tablet_log {
+  /* tablet W login */
+  .tablet_menu {
     display: block;
     display: flex;
-    gap: 72px;
+    gap: 4.7rem;
     font-size: 1.3rem;
     align-items: center;
     position: relative;
   }
-  .log_in {
+  .cont-select span i{
+    font-size: 1rem;
+    /* vertical-align: middle; */
+    padding-bottom: 1px;
+  }
+  .tablet_log{
+    display: block;
+    display: flex;
+    gap: 5rem;
+  }
+  .tablet_log .log_in {
     position: absolute;
     display: block;
     top: -12px;
@@ -121,7 +129,7 @@
     color: #fff;
     text-align: center;
     line-height: 20px;
-    transition: all 3s ease-in-out;
+    /* transition: all 3s ease-in-out; */
     animation: pop 1s infinite;
   }
   @keyframes pop {
@@ -221,7 +229,7 @@
     /* min-width: 800px; */
   }
 }
-@media all and (max-width: 890px) {
+@media all and (max-width: 850px) {
   /* header */
   .header_inner {
     /* min-width: 800px; */
@@ -314,12 +322,12 @@
     gap: 12rem;
   }
   .logo {
-    padding-left: 32%;
+    padding-left: 36%;
   }
-  .topmenu {
+  .tablet_menu{
     display: none;
   }
-  .mobile_menu {
+  .topmenu .mobile_menu {
     display: block;
     font-size: 1.8rem;
   }
@@ -361,13 +369,24 @@
   .dropbox .time {
     width: 260px;
   }
+  /* passenger */
   .number-input {
     width: 520px;
+    padding: 20px;
   }
   .number-input label {
+    white-space: nowrap;
+    padding: 1rem;
   }
   .number-input input {
-    text-align: left;
+    /* text-align: center; */
+    width: 2em;
+    height: 25px;
+    margin-right: 12px;
+  }
+  .number-input button{
+    width: 1.5rem;
+    height: 25px;
   }
   .load_timeTable {
     width: 300px;
@@ -408,8 +427,11 @@
     left: 1rem;
     width: 95%;
   }
+  .section_right ul li a{
+    max-width: 300px;
+  }
   .noti_date {
-    display: none;
+    display: block;
   }
   /* best travel pkg */
   .best_travel {
