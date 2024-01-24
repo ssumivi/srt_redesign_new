@@ -579,6 +579,9 @@ section .section_top,
   text-decoration: underline;
   text-decoration-color: #5f6062;
 }
+.mobile-notice{
+  display: none;
+}
 /* section bt */
 .banner {
   display: flex;
@@ -729,7 +732,7 @@ footer {
   font-weight: 400;
   font-size: 0.97rem;
   word-break: keep-all;
-  /* white-space: nowrap; */
+  white-space: nowrap;
 }
 .ft_link li:not(:last-child):after {
   content: "|";
