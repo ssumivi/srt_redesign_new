@@ -172,7 +172,6 @@ header {
   width: 1260px;
   margin: 0 auto;
   justify-content: center;
-
   gap: 11rem;
   align-items: center;
   position: relative;
@@ -238,7 +237,8 @@ header {
   background-color: #5a2149;
   border-radius: 5px;
   width: 980px;
-  margin: 85px auto;
+  margin: 45px auto;
+  margin-top: 80px;
 }
 .from_to {
   position: relative;
