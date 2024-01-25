@@ -15,6 +15,20 @@ document.addEventListener("DOMContentLoaded", function () {
       list.classList.remove("open");
     }
   });
+  //from to underline
+  var linings = document.querySelectorAll(".underLine");
+
+  linings.forEach(function(lining) {
+    lining.addEventListener("click", function() {
+      // 모든 요소에 있는 active 클래스를 일단 제거
+      linings.forEach(function(item) {
+        item.classList.remove('active');
+      });
+  
+      // 클릭한 요소에만 active 클래스를 추가
+      this.classList.add('active');
+    });
+  });
   // Swiper
   var swiper = new Swiper(".noti_slide", {
     cssMode: true,
@@ -52,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       1440: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       1110: {
         slidesPerView: 3,

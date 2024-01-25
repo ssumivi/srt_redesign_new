@@ -189,7 +189,6 @@ header {
   font-weight: 700;
   color: #404040;
 }
-
 .depth_1::after {
   content: "";
   display: block;
@@ -231,13 +230,15 @@ header {
   opacity: 1;
   visibility: visible;
 }
-
+.menu .depth_1:hover > a{
+  border-bottom: 3px solid #5a2149;
+}
 /* main area */
 .main_inner {
   background-color: #5a2149;
   border-radius: 5px;
   width: 980px;
-  margin: 50px auto;
+  margin: 85px auto;
 }
 .from_to {
   position: relative;
@@ -475,6 +476,10 @@ form p {
   flex-direction: column;
   align-items: center;
 }
+/* .quick_menu_list li:hover img{
+  /* 흑백으로 변환 후 색상 반전 
+  filter: grayscale(100%) invert(red); 
+} */
 .quick_menu_list span {
   padding-top: 20px;
 }
