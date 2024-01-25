@@ -91,17 +91,24 @@
   /* header */
   .header_inner {
     /* min-width: 800px; */
-    padding: 20px 0;
-    gap: 26rem;
+    padding: 30px 0;
+    padding-bottom: 20px;
+    gap: 4rem;
   }
   /* full W login */
-  .fullsc_log {
+  .fullsc_log ul{
     display: none;
+  }
+  .fullsc_log .cont-select{
+    position: absolute;
+    top: -1rem;
+    right: -11rem;
   }
   /* tablet W login */
   .tablet_menu {
     display: block;
     display: flex;
+    justify-content: flex-start;
     gap: 4.7rem;
     font-size: 1.3rem;
     align-items: center;
@@ -121,7 +128,7 @@
   .tablet_log .log_in {
     position: absolute;
     display: block;
-    top: -12px;
+    top: -24px;
     left: -20px;
     font-size: 1rem;
     width: 55px;
@@ -146,8 +153,8 @@
     content: "사이트맵";
     display: block;
     position: absolute;
-    top: -12px;
-    left: 62px;
+    top: -23px;
+    left: 60px;
     width: 70px;
     height: 20px;
     text-align: center;
@@ -237,6 +244,9 @@
     /* min-width: 800px; */
     padding: 20px 0;
     gap: 10rem;
+  }
+  .fullsc_log{
+    display: none;
   }
   /* menu */
   .menu {
