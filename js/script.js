@@ -29,6 +29,27 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add('active');
     });
   });
+  //현재 날짜
+  function getCurrentDate() {
+    const now = new Date();
+    const year = now.getFullYear();
+    let month = now.getMonth() + 1;
+    let day = now.getDate();
+  
+    // 월이나 일이 한 자릿수인 경우 앞에 0을 붙임
+    month = month < 10 ? '0' + month : month;
+    day = day < 10 ? '0' + day : day;
+  
+    return `${year}-${month}-${day}`;
+  }
+  
+  // 페이지 로드 시 현재 날짜를 input에 설정
+  document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('currentDate').value = getCurrentDate();
+  });
+  
+  // 페이지 로드 시 현재 날짜를 input에 설정
+  document.getElementById('currentDate').value = getCurrentDate();
   // Swiper
   var swiper = new Swiper(".noti_slide", {
     cssMode: true,
