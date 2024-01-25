@@ -120,7 +120,6 @@ header {
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   background-color: #fff;
-
   z-index: 5;
   display: none;
 }
@@ -131,8 +130,7 @@ header {
   height: 40px;
   padding: 5px 8px;
   box-sizing: border-box;
-  width: 100%;
-  
+  width: 100%;  
 }
 
 .list-member li button {
