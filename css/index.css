@@ -384,8 +384,36 @@ header {
   top: 0;
   left: 0;
 }
+
 .dropbox label {
   display: none;
+}
+
+/* 셀렉트 박스 스타일링 */
+select {
+  appearance: none; /* 기본 UI 감춤 */
+  padding: 10px;
+  font-size: 1.15rem;
+}
+
+/* 드롭다운 화살표 스타일링 */
+select::after {
+  content: '\25BC'; /* 화살표 아이콘 코드 */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+/* 셀렉트 박스 클릭 시 드롭다운 방향 변경 */
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+select:focus::after {
+  content: '\25B2'; /* 화살표 아이콘 코드 변경 */
 }
 
 .ticketing_info input {
